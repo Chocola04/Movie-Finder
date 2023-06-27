@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import {SearchBar} from "./SearchBar";
 
 export const Header = () => {
   return (
@@ -17,7 +18,7 @@ export const Header = () => {
                         <Link to="/watched">Watched</Link>
                     </li>
                 </ul>
-                <input type="text" placeholder='Search for a movie'/>
+                <SearchBar/>
             </div>
          </div>
     </header>

@@ -5,8 +5,10 @@ import { Watchlist } from './Components/Watchlist';
 import { Watched } from './Components/Watched';
 import {Home} from "./Components/Home";
 import './Components/lib/font-awesome/css/all.min.css';
+import {GlobalProvider} from './context/GlobalState';
 function App(){
     return (
+        // <GlobalProvider>
         <Router>
             <Header/>
 
@@ -19,6 +21,7 @@ function App(){
                 </Route>
             </Routes>
         </Router>
+        //</GlobalProvider>
     )
 }
 
