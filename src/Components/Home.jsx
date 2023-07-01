@@ -2,6 +2,6 @@ import React from "react";
 
 export const Home = () => {
   return (
-    <div>Home Page</div>
+    <div><h1>Hellonpm</h1></div>
   );
 };
