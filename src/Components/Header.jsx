@@ -1,9 +1,12 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {SearchBar} from "./SearchBar";
+import useBearStore from '../state';
 
 export const Header = () => {
-  return (
+  const [search,movies,setMovies,setSearch] = useBearStore((state)=>[state.search,state.movies,state.setMovies,state.setSearch])
+  
+    return (
     <header>
          <div className="container">
             <div className="inner-content">

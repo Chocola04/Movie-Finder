@@ -1,0 +1,13 @@
+import { create } from 'zustand'
+
+const useBearStore = create((set) => ({
+//   bears: 0,
+//   increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
+//   removeAllBears: () => set({ bears: 0 }),
+    movies: [],
+     search : '',
+    setMovies: (movies) => set({movies:movies}),
+    setSearch: (search)=> set({search:search}),
+}))
+
+export default useBearStore;

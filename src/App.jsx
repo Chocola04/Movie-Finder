@@ -11,11 +11,11 @@ function App(){
             <Header/>
 
             <Routes>
-                <Route element = {Home} path="/">    
+                <Route element = {<Home/>} path="/">    
                 </Route>
-                <Route element = {Watched} path="/watched">
+                <Route element = {<Watched/>} path="/watched">
                 </Route>
-                <Route element= {Watchlist} path="/watchlist">
+                <Route element= {<Watchlist/>} path="/watchlist">
                 </Route>
             </Routes>
         </Router>
